@@ -1,0 +1,32 @@
+# Add a New Product
+POST http://localhost:3500/product
+Content-Type: application/json
+
+{
+  "productId": 4,
+  "productName": "Tablet",
+  "price": 30000
+}
+
+###
+# Get All Products
+GET http://localhost:3500/products
+
+###
+# Get a Product by ID 
+GET http://localhost:3500/products/2
+
+###
+# Update an Existing Product
+PUT http://localhost:3500/product
+Content-Type: application/json
+
+{
+  "productId": 2,
+  "productName": "Gaming Laptop",
+  "price": 95000
+}
+
+###
+# Delete a Product by ID (Replace `<productId>` with an actual ID)
+DELETE http://localhost:3500/products/2

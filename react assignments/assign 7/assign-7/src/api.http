@@ -1,0 +1,25 @@
+### Register User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "username": "john_doe",
+  "password": "securepass"
+}
+
+### Get All Users
+GET http://localhost:5000/users
+
+### Login Request
+GET http://localhost:5000/users?username=john_doe&password=securepass
+
+### Update User Password
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+  "password": "newpassword123"
+}
+
+### Delete User
+DELETE http://localhost:5000/users/1

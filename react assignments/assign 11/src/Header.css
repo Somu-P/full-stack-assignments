@@ -1,0 +1,28 @@
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    background-color:darkcyan!important;
+    border-radius: 10px;
+  }
+  
+  .nav-link-custom {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white !important;
+     
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+  
+
+  
+  /* Mobile Sidebar */
+  .offcanvas {
+    background-color: #f8f9fa;
+  }
+  
+  .offcanvas-header h5 {
+    font-weight: bold;
+  }
+  

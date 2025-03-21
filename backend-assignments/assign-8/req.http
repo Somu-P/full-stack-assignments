@@ -1,0 +1,57 @@
+### Create Employee
+POST http://localhost:3000/api/employees
+Content-Type: application/json
+
+{
+  "name": "Somu",
+  "skills": ["JavaScript", "Node.js", "MongoDB"],
+  "address": {
+    "street": "Bachupally",
+    "city": "Hyderabad",
+    "state": "Telanagana",
+    "zip": "500004"
+  },
+  "prevExperiences": [
+    {
+      "company": "Google",
+      "role": "Software Engineer",
+      "years": 3
+    },
+    {
+      "company": "Amazon",
+      "role": "Backend Developer",
+      "years": 2
+    }
+  ]
+}
+
+### Get All Employees
+GET http://localhost:3000/api/employees
+
+### Get Employee by ID
+GET http://localhost:3000/api/employees/67dc7af8c766ebdfb76e25ae
+
+### Update Employee
+PUT http://localhost:3000/api/employees/67dc7af8c766ebdfb76e25ae
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "skills": ["Python", "Django", "PostgreSQL"],
+  "address": {
+    "street": "Sri Nagar",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "zip": "501212"
+  },
+  "prevExperiences": [
+    {
+      "company": "Microsoft",
+      "role": "Software Engineer",
+      "years": 5
+    }
+  ]
+}
+
+### Delete Employee
+DELETE http://localhost:3000/api/employees/67dc7af8c766ebdfb76e25ae

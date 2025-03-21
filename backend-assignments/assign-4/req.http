@@ -1,0 +1,12 @@
+get http://localhost:3000/product-api/products
+
+###create user
+
+post http://localhost:3000/product-api/product
+Content-Type: application/json
+
+{
+    "id":2,
+    "name":"mobile",
+    "cost":25000
+}

@@ -1,0 +1,38 @@
+### Get all products
+GET http://localhost:3000/product-api/products
+Content-Type: application/json
+
+### Get a product by ID
+GET http://localhost:3000/product-api/products/id/67b219868c59b2a2bb6eb0f7
+Content-Type: application/json
+
+### Get a product by Name
+GET http://localhost:3000/product-api/products/name/mobile
+Content-Type: application/json
+
+### Create a new product
+POST http://localhost:3000/product-api/product
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "mobile",
+    "price": 25000,
+    "rating": 4
+}
+
+### Update a product
+PUT http://localhost:3000/product-api/product
+Content-Type: application/json
+
+{
+    "_id": "67b6f1dd7215879e8cc595d3",
+    "id": 3,
+    "name": "watch",
+    "price": 4000,
+    "rating": 5
+}
+
+### Delete a product by ID
+DELETE http://localhost:3000/product-api/product/67b6f1cc7215879e8cc595cf
+Content-Type: application/json
